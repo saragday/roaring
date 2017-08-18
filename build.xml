@@ -1,0 +1,12 @@
+<!-- Generating default binding and schema -->
+<target name="bindgen">
+    <echo message="Running bindgen tool" />
+    <echo message="${basedir}" />
+    <java classpathhref="classpath" fork="true" failonerror="true"
+          classname="">
+        <arg value="-s" />
+        <arg value="${basedir}/java/protocal/" />
+        <arg value="-s" />
+    </java>
+
+</target>
